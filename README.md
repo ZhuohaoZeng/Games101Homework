@@ -1,4 +1,6 @@
 # Modern Computer Graphics
+Built core modules: transformation matrices, triangle rasterizer with Z-buffering, Blinn–Phong shading with texture/bump/displacement mapping, Bézier curve rendering, ray–triangle intersection, and BVH traversal.  
+Gained extensive experience translating math (linear algebra, numerical methods) into performant C++ code, with debugging, modular design, and optimization for rendering tasks.
 
 ## HW1: Rotation and Projection
 ### Features
