@@ -12,7 +12,7 @@ In this assignment, I implemented the fundamental transformations needed to rend
   Construct the perspective projection matrix using the given parameters and return it.
 
 ## HW2: Triangles and Z-buffering
-In this assignment, I extended the previous wireframe rendering to rasterize filled triangles. The task involves implementing triangle rasterization, point-in-triangle testing, and z-buffering to correctly render solid triangles with proper depth handling.
+In this assignment, I implemented the rasterization of filled triangles on the screen. The task focuses on determining whether a pixel lies inside a triangle, computing interpolated depth values, and applying z-buffering to ensure correct visibility. Through this, triangles can be correctly rasterized and displayed with proper depth handling.
 ### Features
 - **rasterize_triangle(const Triangle& t)**
 Perform triangle rasterization. For each pixel inside the triangle’s bounding box, check if its center lies within the triangle. If inside, compute the interpolated depth value and compare it with the depth buffer. Update the pixel color and depth buffer if it is closer to the camera.
