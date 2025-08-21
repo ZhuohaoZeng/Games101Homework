@@ -38,21 +38,21 @@ Extend Blinn–Phong shading with bump mapping, modifying surface normals using 
 - **displacement_fragment_shader()**  
 Extend bump mapping with displacement mapping, adjusting both surface normals and vertex positions based on height map.
 
-## HW4: 
+## HW4: Bezier Curve
 I implemented Bézier curve drawing using the De Casteljau algorithm. The task involves computing curve points through recursive subdivision of control points and rendering the resulting curve with OpenCV.
 ### Features
 - **bezier**  
 Implements Bézier curve drawing by iterating over parameter t in the range [0,1]. For each value of t, it calls recursive_bezier to compute the corresponding point on the curve, and then stores the result into an OpenCV Mat object.
 - **recursive_bezier**  
 Computes a point on the Bézier curve given a sequence of control points and parameter t. This is done using the De Casteljau algorithm: repeatedly subdividing line segments between adjacent control points until only one point remains, which represents the curve point at t.
-## HW5:
+## HW5: Ray–Triangle Intersection
 I implemented basic ray tracing to render scenes with spheres and triangles. The task focuses on generating rays for each pixel, computing ray–triangle intersections, and applying shading at the intersection points.
 ### Features
 - **Render()**  
 For each pixel in the image, generate the corresponding ray and call castRay to compute the color. The resulting color is then stored in the framebuffer to produce the final image.
 - **rayTriangleIntersect()**  
 Compute the intersection between a ray and a triangle defined by vertices v0, v1, v2. The ray is specified by its origin orig and normalized direction dir. The intersection test is performed using the Möller–Trumbore algorithm, returning parameters tnear, u, v if an intersection occurs.
-## HW6:
+## HW6: Acceleration Architecture
 I implemented bounding volume hierarchy (BVH) to accelerate ray–object intersection tests. The task involves checking whether a ray intersects with bounding boxes and using the BVH tree structure to reduce the number of intersection computations.
 ### Features
 - **IntersectP(const Ray& ray, const Vector3f& invDir, const std::array<int, 3>& dirIsNeg)**  
